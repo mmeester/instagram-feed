@@ -4,6 +4,8 @@
   "description": "Small package to serve the api feed to sites",
   "main": "index.js",
   "scripts": {
+    "start": "cross-env NODE_ENV=production node index.js",
+    "dev": "cross-env NODE_ENV=development PORT=8963 nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +23,17 @@
   "bugs": {
     "url": "https://github.com/mmeester/instagram-feed/issues"
   },
-  "homepage": "https://github.com/mmeester/instagram-feed#readme"
+  "homepage": "https://github.com/mmeester/instagram-feed#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.0",
+    "nodemon": "^2.0.2"
+  },
+  "dependencies": {
+    "collect.js": "^4.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "instagram-scraping": "^1.0.11",
+    "node-cache": "^5.1.0"
+  }
 }
