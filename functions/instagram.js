@@ -2,7 +2,7 @@ let ig = require('instagram-scraping'),
     collect = require("collect.js");
 const NodeCache = require( "node-cache" );
     
-const ttl = 60 * 60 * 1; // cache for 1 Hour
+const ttl = 60 * 60 * process.env.CACHE;
 const cache = new NodeCache({ stdTTL: ttl, checkperiod: ttl * 0.2, useClones: false });
 
 module.exports = {
