@@ -9,7 +9,7 @@ module.exports = {
   getFeed: function(req, res) {
     
     const items = cache.get('insta');
-    if (items) {
+    if (items && process.env.CACHE > 0) {
       res.send(items)
     }else {
       ig.scrapeUserPage(process.env.INSTAGRAM_USER).then(data => {
