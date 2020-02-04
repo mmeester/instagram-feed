@@ -1,0 +1,25 @@
+{
+  "name": "instagram-feed",
+  "version": "1.0.0",
+  "description": "Small package to serve the api feed to sites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/mmeester/instagram-feed.git"
+  },
+  "keywords": [
+    "Instagram",
+    "scraper",
+    "feed",
+    "api"
+  ],
+  "author": "Maurits Meester <maurits@e-mmer.nl> (e-mmer.nl)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmeester/instagram-feed/issues"
+  },
+  "homepage": "https://github.com/mmeester/instagram-feed#readme"
+}
