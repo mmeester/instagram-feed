@@ -8,10 +8,10 @@ const cache = new NodeCache({ stdTTL: ttl, checkperiod: ttl * 0.2, useClones: fa
 module.exports = {
   getFeed: function(req, res) {
     
-    const items = cache.get('insta');
-    if (items) {
-      res.send(items)
-    }else {
+    // const items = cache.get('insta');
+    // if (items) {
+    //   res.send(items)
+    // }else {
       ig.scrapeUserPage(process.env.INSTAGRAM_USER).then(data => {
       
         let i = 0;
@@ -34,7 +34,7 @@ module.exports = {
         res.send(output.items);
         
       });
-    }
+    // }
     
   }
 }
